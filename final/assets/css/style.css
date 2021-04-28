@@ -1,0 +1,539 @@
+html {
+    margin: 0px;
+    font-family: "Libre Franklin";
+    scroll-behavior: smooth;
+}
+body {
+    cursor: default;
+    border-left: 9px solid #ff638a;
+    border-right: 9px solid #ff638a;
+    transition: 1s;
+    margin: 0;
+    /* border-image-slice: 1; */
+    /* border-image-source: linear-gradient(to bottom, #ff638a, #ff9532, #fffd9a, #88ffa2, #83e2ff, #435add, #ba6fff); */
+    animation: borderColors 30s linear 0s infinite forwards;
+}
+@keyframes borderColors {
+    0% {     
+        border-left: 9px solid #ff638a;
+        border-right: 9px solid #ff638a;
+    }
+    14% {
+        border-left: 9px solid #ff9532;
+        border-right: 9px solid #ff9532;
+    }
+    28% {
+        border-left: 9px solid #fffd9a;
+        border-right: 9px solid #fffd9a;
+    }
+    42% {
+        border-left: 9px solid #88ffa2;
+        border-right: 9px solid #88ffa2;
+    }
+    56% {
+        border-left: 9px solid #83e2ff;
+        border-right: 9px solid #83e2ff;
+    }
+    70% {
+        border-left: 9px solid #697be2;
+        border-right: 9px solid #697be2;
+    }
+    84% {
+        border-left: 9px solid #ba6fff;
+        border-right: 9px solid #ba6fff;  
+    }
+    100% { 
+        border-left: 9px solid #ff638a;
+        border-right: 9px solid #ff638a;
+    }
+}
+  
+#top-bar {
+    position: fixed;
+    width: 100%;
+    animation: fadeIn ease 1s;
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    margin: 35px 40px 0 0;
+    z-index: 2;   
+    animation: fadeIn 4s ease 0s 1 forwards;
+    opacity: 0;
+}
+.nav-item {
+    font-family: "Libre Franklin";
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 9pt;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    mix-blend-mode: exclusion;
+    text-decoration: none;
+    margin: 0;
+    color: rgb(150, 150, 150);
+    
+}
+#current-nav {
+    opacity: .5;
+}
+.nav-item:hover {
+    cursor: pointer;
+    transition: .2s;
+    opacity: .5;
+}
+
+#black-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1b1b1b;
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 700px;
+}
+#intro-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+#hey {
+    font-family: "Libre Franklin";
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: -40px 290px 0 0;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+.name {
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: normal;
+    margin: 0px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    background: #1b1b1b;
+    z-index: 2;
+    opacity: 0;
+    letter-spacing: 1px;
+}
+#ji {
+    font-size: 70pt;
+    margin-top: 10px;
+    margin-left: -120px;
+    margin-bottom: 0px;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+}
+#ki {
+    font-size: 60pt;
+    margin-top: 130px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    animation: fadeIn 1s ease 0.45s 1 forwards;
+}
+#left-arrow {
+    margin: 55px 760px 0 0;
+    height: 50px;
+    transition: opacity 2s;
+    /* animation: left-arrow-rotate 1s ease 1s 2 normal; */
+    z-index: 1;
+    animation: arrowColors 30s linear 0s infinite forwards;
+}
+
+#right-arrow {
+    margin: 60px 0 0 790px;
+    height: 50px;
+    transition: opacity 2s;
+    /* animation: right-arrow-rotate 1s ease 1s 2 normal; */
+    z-index: 1;
+    animation: arrowColors 30s linear 0s infinite forwards;
+}
+@keyframes arrowColors {
+    0% {     
+        filter: hue-rotate(0deg);
+    }
+    12% {
+        filter: hue-rotate(50deg);
+    }
+    29% {
+        filter: hue-rotate(100deg) brightness(150%);
+    }
+    49% {
+        filter: hue-rotate(150deg);
+    }
+    56% {
+        filter: hue-rotate(200deg);
+    }
+    70% {
+        filter: hue-rotate(255deg);
+    }
+    86% {
+        filter: hue-rotate(310deg); 
+    }
+    100% { 
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes left-arrow-rotate {
+    0% {
+        transform: rotate(90deg) translateY(-50px)
+    }
+    100% {
+        transform: rotate(0deg) translateX(0px)
+    }
+}
+@keyframes right-arrow-rotate {
+    0% {
+        transform: rotate(-90deg) translateY(-50px)
+    }
+    100% {
+        transform: rotate(0deg) translateX(0px)
+    }
+}
+.pronunciation {
+    font-family: "Libre Franklin";
+    font-size: 20pt;
+    font-weight: normal;
+    color: #ff638a;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: pronuncColors 30s linear 0s infinite forwards;
+}
+@keyframes pronuncColors {
+    0% {     
+        color: #ff638a;
+    }
+    14% {
+        color: #ff9532;
+    }
+    28% {
+        color: #fffd9a;
+    }
+    42% {
+        color: #88ffa2;
+    }
+    56% {
+        color: #83e2ff;
+    }
+    70% {
+        color: #697be2;
+    }
+    84% {
+        color: #ba6fff;  
+    }
+    100% { 
+        color: #ff638a;
+    }
+}
+#pronunc-ji {
+    margin: -90px 750px 0 0;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+}
+#pronunc-ki {
+    margin: 75px 0 0 720px;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+}
+#hover-for {
+    font-family: "Libre Franklin";
+    font-size: 14pt;
+    color: gray;
+    text-align: center;
+    margin: 0 0 60px 0;
+    padding: 0;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease 1.5s 1 forwards, glowing 1s ease 2s infinite alternate;
+    opacity: 0;
+    transition: 0.5;
+    z-index: 1;
+}
+#hover-for:hover {
+    cursor: default;
+    opacity: 0;
+    transition: 0.5s;  
+}
+
+#tag-gap {
+    height: 40px;
+    width: 2px;
+    margin: 0;
+    display: block;
+}
+.tag {
+    animation: fadeIn ease 5s;
+    font-family: "Libre Franklin";
+    font-size: 16pt;
+    letter-spacing: 1px;
+    margin: auto;
+    color: white;
+    margin: 15px 0 0 0;
+    display: block;
+    animation: fadeIn 1s ease 1s 1 forwards;
+    opacity: 0;
+}
+#down-arrow {
+    position: absolute;
+    bottom: 50px;
+    opacity: .5;
+    height: 15px;
+}
+#down-arrow:hover {
+    opacity: .8;
+    transition: 0.5s;
+    animation: MoveUpDown 2s ease 0s infinite alternate;
+}
+#white-back {
+    background: white;
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+
+}
+#proj-page-first {
+    padding: 80px 0 0 0;;
+    margin: 0 auto;
+    min-height: 600px;
+}
+.proj-page-next {
+    height: 100%;
+    padding: 80px 0 0 0;
+    margin: 0 auto;
+}
+#page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 80px 0px 80px;
+}
+h1 {
+    font-family: "Libre Franklin";
+    font-size: 24pt;
+    color: black;
+    margin: 0;
+    /*padding: 70px 0 50px 70px;
+    padding-bottom: 50px;*/
+    padding: 0 0 50px 0;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+}
+
+.space {
+    width: 990px;
+    height: 10px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    margin: 0 80px 0px 80px;
+    padding: 0 0 80px 0;
+    min-height: 600px;
+}
+.odd-proj-text {
+    margin: 20px 70px 0px 0px;
+}
+.proj-text {
+    margin: 20px 0 0 70px;
+}
+.odd-arrow {
+    margin-bottom: 30px;
+    height: 100px;
+    align-self: flex-end;
+    z-index: 0;
+}
+.even-arrow {
+    transform: scaleX(-1);
+    margin-bottom: 30px;
+    margin-left: 120px;
+    height: 100px;
+    z-index: 0;
+}
+
+h2 {
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36pt;
+    margin: 0px;
+    transition: 0.2s;
+    background:white;
+    z-index: 3;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+}
+h2:hover {
+    cursor: pointer;
+    font-size: 38pt;
+    transition: 0.5s;
+}
+.proj-link {
+    color: black;
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36pt;
+    margin: 0px;
+    transition: 0.2s;
+    text-decoration: none;
+    display: block;
+}
+.proj-link:hover {
+    cursor: pointer;
+    font-size: 38pt;
+    transition: 0.5s;
+}
+.underline {
+    width: 5px;
+    height: 5px;
+
+}
+h3 {
+    font-family: "Libre Franklin";
+    font-size: 10pt;
+    letter-spacing: 1px;
+    margin: 4px 0 20px 0;
+    color: #999999;
+}
+.proj-description {
+    font-family: "Libre Franklin";
+    font-size: 13pt;
+    line-height: 20pt;
+    max-width: 300px;
+
+}
+.proj-image {
+    position: inline;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    width: 750px;
+    height: 600px;
+    /*min-width: 550px;*/
+    z-index: 1;
+    transition: 0.5s;
+}
+.proj-image:hover {
+    mix-blend-mode: darken;
+    /* box-shadow: 0 0 30px #beedff; */
+    transition: 1s;
+}
+.image {
+    position: inline;
+    border-radius: 18px;
+    height: 600px;
+    margin: 0;
+    text-align: center;
+    z-index: 0;
+    padding: 0;
+    transition: 0.5s;
+
+}
+.image:hover {
+    transition: 1s;
+    cursor: pointer;
+}
+#img-1:hover {  
+    /*background: linear-gradient(to bottom, #FF8D8D, #BBBBBB);*/
+    background-color: #FF8D8D; 
+    box-shadow: 0 0 30px #FF8D8D;
+    mix-blend-mode: darken;
+}
+
+#img-2:hover {
+    /* background: linear-gradient(to bottom, #FFD7BA, #FFC3E0); */
+    background-color: #FFC3E0;
+    box-shadow: 0 0 30px #FFC3E0;
+    mix-blend-mode: darken;
+}
+#img-3:hover {
+    /* background: linear-gradient(to bottom, #005377, #137A62); */
+    background-color: #3e7ca0;
+    box-shadow: 0 0 30px #3e7ca0;
+    mix-blend-mode: darken;
+}
+#bottom {
+    height: 80px;
+    width: 2px;
+}
+.hidden {
+    opacity: 0;
+}
+.about-image {
+    position: inline;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    width: 544.5px;
+    height: 600px;
+    /*min-width: 550px;*/
+    z-index: 1;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+    opacity: 0;
+}
+#about-text {
+    margin: 20px 70px 0px 0px;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+    opacity: 0;
+}
+.about-description {
+    font-family: "Libre Franklin";
+    font-size: 14pt;
+    line-height: 20pt;
+    max-width: 510px;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes oddArrowRotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(-10deg) translate(-10px, -10px)
+    }
+}
+@keyframes evenArrowRotate {
+    0% {
+        transform: rotate(0deg) scaleX(-1)
+    }
+    100% {
+        transform: rotate(10deg) translate(10px, -10px) scaleX(-1)
+    }
+}
+@keyframes glowing {
+    0% { text-shadow: 0 0 -10px #747474; }
+    100% { text-shadow: 0 0 22px #747474; }
+  }
+  

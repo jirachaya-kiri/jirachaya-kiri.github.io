@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jirachaya</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,100&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="top-bar">
+            <div id="navbar"> 
+                <p class="nav-item" id="current-nav">HOME</p>
+                <a class="nav-item" href="about.html">ABOUT</a>
+                <p class="nav-item">GALLERY</p>
+                <p class="nav-item">RESUME</p>
+                <p class="nav-item">CONTACT</p>
+            </div>
+        </div>
+        <div id="content">
+            <div id="black-back">
+                <div id="intro-text">
+                    <p id="hey">Hey there! I'm</p>
+                    <p class="name" id="ji">Jirachaya</p>
+                    <p class="name" class="hidden" id="ki">Kiriruangchai</p>
+                    <img class="hidden" id="left-arrow" src="assets/images/left arrow.svg" />
+                    <img class="hidden" id="right-arrow" src="assets/images/right arrow.svg" />
+                    <p class="pronunciation hidden type-it" id="pronunc-ji">ji-ruh-CHAI-yuh</p>
+                    <p class="pronunciation hidden type-it" id="pronunc-ki">ki-ree-RUNG-chai</p>
+                    <div>
+                        <span id="hover-for">( Hover <b>here</b> for pronunciation )</span>
+                    </div>                    
+                    <div>
+                        <div id="tag-gap"></div>
+                        <p class="tag">I'm a UC Berkeley student interested in UX/UI design.</p>
+                        <p class="tag">Check out some of my projects below!</p>
+                    </div>                    
+                </div>
+                <a href="#white-back"><img id="down-arrow" src="assets/images/down arrow.svg" /></a>
+            </div> 
+            <div id="white-back">
+                <div id="proj-page-first">
+                    <div id="page-title">
+                        <h1>Projects</h1>
+                        <div class="space"></div>
+                    </div>
+                    <div class="project" id="proj-1">
+                        <div class="proj-image">
+                            <div class="proj-background"></div>
+                            <img class="image" id="img-1" src="assets/images/distraction transparent.png" alt="mockups of distraction app on iphone screens"/>
+                        </div>
+                        <div class="proj-text" >
+                            <img class="odd-arrow" id="arrow1" src="assets/images/black arrow.svg" />
+                            <h2 id="title-1">Distraction</h2>
+                            <div class="underline hidden" id="under-1"></div>
+                            <h3>CASE STUDY</h3>
+                            <p class="proj-description">How do we help people limit their social media use?</p>
+                            <p class="proj-description">Fill the experience with as many annoyances as possible.</p>
+                            <p class="proj-description">I’ll explain.</p>
+                        </div>    
+                    </div>   
+                </div>
+                <div class=proj-page-next>
+                    <div class="project" id="proj-2">
+                        <div class="odd-proj-text">
+                            <img class="even-arrow" id="arrow2" src="assets/images/black arrow.svg" />
+                            <h2 id="title-2">Donuts</h2>
+                            <div class="underline hidden" id="under-2"></div>
+                            <h3>WEBSITE REDESIGN</h3>
+                            <p class="proj-description">Kingpin Donuts is a super cute donut shop in Berkeley. I redesigned its website to match!</p>
+                            <p class="proj-description">Check out both my design and coding processes for this desktop site.</p>    
+                        </div>
+                        <div class="proj-image">
+                            <img class="image" id="img-2" src="assets/images/donuts transparent.png" alt="donut website on laptop screen"/>
+                        </div>
+                    </div> 
+                </div>
+                <div class=proj-page-next>
+                    <div class="project" id="proj-3">
+                        <div class="proj-image">
+                            <!--<img class="image" id="img-3" src="assets/images/dreams transparent.png" />-->
+                            <a class="proj-link" href="https://www.youtube.com/watch?v=G7RgN9ijwE4"><img class="image" id="img-3" src="assets/images/dreams transparent.png" alt="spreadsheet of dream info"/></a>
+                        </div>
+                        <div class="proj-text">
+                            <img class="odd-arrow" id="arrow3" src="assets/images/black arrow.svg" />
+                            <!--<h2 id="title-3">Dreams</h2>-->
+                            <a class="proj-link h2" id="title-3" href="https://www.youtube.com/watch?v=G7RgN9ijwE4">Dreams</a>
+                            <div class="underline hidden" id="under-3"></div>
+                            <h3>PERSONAL PROJECT</h3>
+                            <p class="proj-description">I've documented over 600 of my dreams since I was 13.</p>
+                            <p class="proj-description">I'm working on a way to display the trends and highlights in a delightful way.</p>
+                            <p class="proj-description">See my progress!</p>
+                        </div>  
+                    </div>
+                </div> 
+                <div id="bottom"></div>
+           </div>             
+        </div>       
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="typeit.min.js"></script>
+    </body>
+</html>
