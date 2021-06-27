@@ -378,6 +378,17 @@ h2 {
     z-index: 3;
     animation: fadeIn 1s ease 0.35s 1 forwards;
 }
+.h2-no-link {
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36pt;
+    margin: 0px;
+    transition: 0.2s;
+    background:white;
+    z-index: 3;
+    animation: fadeIn 1s ease 0.35s 1 forwards;
+}
 h2:hover {
     cursor: pointer;
     font-size: 38pt;
